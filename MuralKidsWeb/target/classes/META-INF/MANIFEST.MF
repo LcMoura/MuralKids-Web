@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: luizcarlos
+Build-Jdk: 11.0.4
+Implementation-Title: MuralKidsWeb
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.muralkids.web.boot
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/MuralKidsWeb
+Created-By: Maven Integration for Eclipse
+
