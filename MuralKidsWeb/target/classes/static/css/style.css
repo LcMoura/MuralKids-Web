@@ -40,7 +40,7 @@ body {
     height: 100vh;
     border-top: 1px solid #eee;
     border-right: 1px solid #eee;    
-    background-color: #f8f9fa;
+    background-color: #888a85;
     flex-shrink: 0;
     overflow: hidden;
     transition: width .5s;
@@ -87,7 +87,7 @@ body {
  */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #1e94d2;
+	background-color: #2e3436;
 }
 
 /*
@@ -117,4 +117,17 @@ body {
 	display: block;
 	color: #777777;
 	text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2e3436;
+    border-color: #888a85;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #2e3436;
+    border-color: #888a85;
 }

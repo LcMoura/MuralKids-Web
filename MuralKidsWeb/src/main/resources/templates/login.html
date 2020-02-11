@@ -21,19 +21,19 @@
 
 	<div class="container">
 		<br>
-		<div class="row">
+		<div class="row" >
 			<div class="col-sm-4 py-2">
 			</div>
 			<div class="col-sm-4 py-2">
-		<h2>:: Login</h2>
-				<div class="card bg-info text-white h-100">
+		<h2>Logar no Sistema</h2>
+				<div class="card bg-info text-white h-100"  style="background-color: gray;">
 					<br/>
-					<div class="card-body">
+					<div class="card-body"  style="background-color: gray;">
 						<form th:action="@{/login}" method="post">
 							<div class="form-group">
 								<label>Login: </label> <input class="form-control"
 									required="required" type="text" size="10" name="username"
-									placeholder="Informe o nome" />
+									placeholder="Informe o nome"/>
 							</div>
 							<div class="form-group">
 								<label>Senha: </label> <input class="form-control"
@@ -41,8 +41,8 @@
 									placeholder="Informe a senha" />
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary">Login</button>
-								<a th:href="@{/novo-usuario}" class="btn btn-primary">Novo Usuário</a>
+								<button  style="background-color: #2e3436;" type="submit" class="btn btn-primary">Login</button>
+								<a  style="background-color: #2e3436;" th:href="@{/novo-usuario}" class="btn btn-primary">Novo Usuário</a>
 							</div>
 							
 							<div th:if="${param.error}">

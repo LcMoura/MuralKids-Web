@@ -24,10 +24,10 @@
 		<div class="row">
 			<div class="col-sm-4 py-2"></div>
 			<div class="col-sm-4 py-2">
-				<h2>:: Novo Usuário</h2>
-				<div class="card bg-info text-white h-100">
+				<h2>Cadastrar Novo Usuário</h2>
+				<div class="card bg-info text-white h-100" style="background-color: gray;">
 					<br />
-					<div class="card-body">
+					<div class="card-body" style="background-color: gray;">
 						<form th:action="@{/criarUsuario}" method="post">
 							<div class="form-group">
 								<label>Nome: </label> <input class="form-control"
@@ -56,10 +56,12 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary">Criar
+								<button style="background-color: #2e3436;" type="submit" class="btn btn-primary">Criar
 									conta</button>
+									<a style="background-color: #2e3436;" th:href="@{/login}" class="btn btn-primary">Entrar no sistema</a>
 							</div>
-							<a th:href="@{/login}" class="btn btn-primary">Entrar no sistema</a>
+												
+							
 						</form>
 <!-- 						<div class="alert alert-success" th:if="${mensagemSucesso}" -->
 <!-- 							th:text="${mensagemSucesso}"> -->
