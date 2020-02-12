@@ -21,12 +21,7 @@ public class Funcionario extends AbstractEntity<Long> {
 	@Size(max = 255, min = 3)
 	@Column(nullable = false, unique = true)
 	private String nome;
-	
-//	@NotNull
-//	@NumberFormat(style = Style.CURRENCY, pattern = "#,##0.00")
-//	@Column(nullable = false, columnDefinition = "DECIMAL(7,2) DEFAULT 0.00")
-//	private BigDecimal salario;
-	
+		
 	@NotNull
 	@PastOrPresent(message = "{PastOrPresent.funcionario.dataEntrada}")
 	@DateTimeFormat(iso = ISO.DATE, pattern = "")
@@ -54,14 +49,6 @@ public class Funcionario extends AbstractEntity<Long> {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-//	public BigDecimal getSalario() {
-//		return salario;
-//	}
-//
-//	public void setSalario(BigDecimal salario) {
-//		this.salario = salario;
-//	}
 
 	public LocalDate getDataEntrada() {
 		return dataEntrada;
